@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         id="WebApp_ID" version="3.1">
+    <display-name>WebBasic</display-name>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <servlet>
+        <servlet-name>AddServlet</servlet-name>
+        <servlet-class>com.web.tom.servlet.AddServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddServlet</servlet-name>
+        <url-pattern>/AddServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteServlet</servlet-name>
+        <servlet-class>com.web.tom.servlet.DeleteServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteServlet</servlet-name>
+        <url-pattern>/DeleteServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>com.web.tom.servlet.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateServlet</servlet-name>
+        <url-pattern>/UpdateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowServlet</servlet-name>
+        <servlet-class>com.web.tom.servlet.ShowServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowServlet</servlet-name>
+        <url-pattern>/ShowServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.web.tom.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SelectServlet</servlet-name>
+        <servlet-class>com.web.tom.servlet.SelectServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectServlet</servlet-name>
+        <url-pattern>/SelectServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--down student-->
+    <servlet>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <servlet-class>com.web.tom.studentServlet.AddStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddStudentServlet</servlet-name>
+        <url-pattern>/AddStudentServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteStudentServlet</servlet-name>
+        <servlet-class>com.web.tom.studentServlet.DeleteStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteStudentServlet</servlet-name>
+        <url-pattern>/DeleteStudentServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateStudentServlet</servlet-name>
+        <servlet-class>com.web.tom.studentServlet.UpdateStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateStudentServlet</servlet-name>
+        <url-pattern>/UpdateStudentServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowStudentServlet</servlet-name>
+        <servlet-class>com.web.tom.studentServlet.ShowStudentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowStudentServlet</servlet-name>
+        <url-pattern>/ShowStudentServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SelectStNumberServlet</servlet-name>
+        <servlet-class>com.web.tom.studentServlet.SelectStNumberServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectStNumberServlet</servlet-name>
+        <url-pattern>/SelectStNumberServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SelectNameServlet</servlet-name>
+        <servlet-class>com.web.tom.studentServlet.SelectNameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectNameServlet</servlet-name>
+        <url-pattern>/SelectNameServlet</url-pattern>
+    </servlet-mapping>
+
+    <!--down Sign-->
+    <servlet>
+        <servlet-name>ShowSignServlet</servlet-name>
+        <servlet-class>com.web.tom.signServlet.ShowSignServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowSignServlet</servlet-name>
+        <url-pattern>/ShowSignServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddSignServlet</servlet-name>
+        <servlet-class>com.web.tom.signServlet.AddSignServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddSignServlet</servlet-name>
+        <url-pattern>/AddSignServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowSTSignServlet</servlet-name>
+        <servlet-class>com.web.tom.signServlet.ShowSTSignServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowSTSignServlet</servlet-name>
+        <url-pattern>/ShowSTSignServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SignServlet</servlet-name>
+        <servlet-class>com.web.tom.signServlet.SignServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SignServlet</servlet-name>
+        <url-pattern>/SignServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>
