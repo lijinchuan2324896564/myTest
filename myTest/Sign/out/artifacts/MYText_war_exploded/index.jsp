@@ -45,6 +45,7 @@
         <tr>
             <td style="text-align: left;"><a href="add.jsp">添加管理员</a></td>
             <td style="text-align: left;"><a href="Select.jsp">详细查询</a></td>
+            <td style="text-align: left;"><a href="Operation.jsp">返回</a></td>
         </tr>
     </table>
 </body>

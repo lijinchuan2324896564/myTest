@@ -31,8 +31,10 @@ public class LoginServlet extends HttpServlet {
         Admin ad =dao.queryAdminByidAndPwd (admin);
         if (ad==null){
             response.sendRedirect("Enter.jsp");
+            System.out.print ("登陆失败！");
         }else {
             response.sendRedirect("Operation.jsp");
+            System.out.print ("登陆成功！");
         }
     }
 }

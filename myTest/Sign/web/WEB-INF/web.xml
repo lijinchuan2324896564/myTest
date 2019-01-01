@@ -63,6 +63,15 @@
         <url-pattern>/SelectServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>SelectUsernameServlet</servlet-name>
+        <servlet-class>com.web.tom.servlet.SelectUsernameServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SelectUsernameServlet</servlet-name>
+        <url-pattern>/SelectUsernameServlet</url-pattern>
+    </servlet-mapping>
+
     <!--down student-->
     <servlet>
         <servlet-name>AddStudentServlet</servlet-name>

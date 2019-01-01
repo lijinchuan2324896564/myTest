@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.web.tom.entity.Admin;
+import com.web.tom.entity.Student;
 
 
 public class AdminDao {
@@ -105,6 +106,27 @@ public class AdminDao {
         }
         return admin;
     }
+    public Admin selectAdminByname(String username) {
+        Connection conn = DbHelper.getConnection();
+        String sql = "select * from _admin where username = '"+username+"'" ;
+        Admin admin = null;
+        try {
+            PreparedStatement pst = conn.prepareStatement(sql);
+            ResultSet rst = pst.executeQuery();
+            while (rst.next()) {
+                admin = new Admin ();
+                admin.setId (rst.getInt("id"));
+                admin.setUsername (rst.getString("username"));
+                admin.setUserpwd (rst.getString("userpwd"));
+//                System.out.print (rst.getString("name"));
+            }
+            rst.close();
+            pst.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return admin;
+    }
     public Admin queryAdminByidAndPwd(Admin admin){
         String sql="select username,userpwd from _admin where username=? and userpwd=?";
         Connection conn = DbHelper.getConnection();
@@ -113,7 +135,7 @@ public class AdminDao {
             pst.setString(1, admin.getUsername());
             pst.setString(2, admin.getUserpwd());
             ResultSet rs = pst.executeQuery ();
-            if (rs.next ()){
+            while (rs.next ()){
                 admin =new Admin ();
                 admin.setUsername (rs.getString ("username"));
                 admin.setUserpwd (rs.getString ("userpwd"));

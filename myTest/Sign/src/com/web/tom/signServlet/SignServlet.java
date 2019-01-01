@@ -21,7 +21,7 @@ public class SignServlet extends HttpServlet {
         String stNumber=req.getParameter ("stNumber");
         req.setCharacterEncoding("UTF-8");
         resp.setCharacterEncoding("UTF-8");
-        resp.setContentType("text/html;charset=UTF-8");
+        resp.setContentType   ("text/html;charset=UTF-8");
         Sign sign=new Sign();
         sign.setStNumber (Integer.parseInt (stNumber));
         sign.setName (name);

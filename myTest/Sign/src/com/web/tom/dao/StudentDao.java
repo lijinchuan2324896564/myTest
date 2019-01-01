@@ -116,7 +116,7 @@ public class StudentDao {
                 student.setStNumber (rst.getInt("stNumber"));
                 student.setName(rst.getString("name"));
                 student.setMajor(rst.getString("major"));
-                System.out.print (rst.getString("name"));
+//                System.out.print (rst.getString("name"));
             }
             rst.close();
             pst.close();

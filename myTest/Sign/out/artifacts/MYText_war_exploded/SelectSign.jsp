@@ -15,8 +15,8 @@
     <form action="SignServlet" method="post" style="text-align: center">
         <h3 style="text-align: center;margin-top: 20%">学号:</h3><br>
         <input type="text" name="stNumber"><br>
-        <h3 style="text-align: center;margin-top: 7%">姓名:</h3><br>
-        <input type="text" name="name"><br>
+        <%--<h3 style="text-align: center;margin-top: 7%">姓名:</h3><br>--%>
+        <%--<input type="text" name="name"><br>--%>
         <input type="submit" value="确定"><input  type="button" value="返回"onclick="history.go(-1)">
     </form>
 </div>

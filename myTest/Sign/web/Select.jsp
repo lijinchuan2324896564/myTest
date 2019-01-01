@@ -12,9 +12,9 @@
 </head>
 <body style="background-color: #a0d7ed">
     <div style="width: 350px;height: 400px; border:5px solid #fff5fd;margin-left: 37%">
-        <form action="SelectServlet" method="post" style="text-align: center">
-            <h3 style="text-align: center;margin-top: 30%">请输入编号:</h3><br>
-            <input type="text" name="id">
+        <form action="SelectUsernameServlet" method="post" style="text-align: center">
+            <h3 style="text-align: center;margin-top: 30%">请输入账号:</h3><br>
+            <input type="text" name="username">
             <input type="submit" value="确定"><input  type="button" value="返回"onclick="history.go(-1)">
         </form>
     </div>

@@ -55,14 +55,14 @@ public class SignDao {
         List<Sign> list = new ArrayList<Sign> ();
         Connection conn = DbHelper.getConnection();
         String sql = "select * from sign where stNumber = ? ";
-        System.out.print (sql);
+//        System.out.print (sql);
         try {
             PreparedStatement pst = conn.prepareStatement(sql);
 //            pst.setString(1, String.valueOf (sign.getStNumber ()));
             pst.setInt(1, sign.getStNumber ());
 //            pst.setString(2, sign.getName ());
             ResultSet rst = pst.executeQuery();
-            if (rst.next ()){
+            while (rst.next ()){
                 sign=new Sign ();
 //                sign.setId (rst.getInt ("id"));
                 sign.setStNumber (rst.getInt ("stNumber"));
